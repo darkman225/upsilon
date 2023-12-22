@@ -419,7 +419,7 @@ h6 {
 
 @media (max-width: 991px) {
   #hero {
-    height: 100vh;
+    height: 60vh;
     text-align: center;
   }
 
