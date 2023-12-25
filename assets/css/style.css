@@ -1,11 +1,3 @@
-/**
-* Template Name: Arsha
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -99,6 +91,20 @@ h6 {
 #header .logo img {
   max-height: 80px;
   max-height: 60;
+}
+
+#header select {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+  border-radius: 30px;
+  transition: 0.5s;
+  margin: 5px 5px 5px 0;
+  color: orange;
+  background: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -332,6 +338,87 @@ h6 {
   visibility: visible !important;
 }
 
+/**
+* LANG SECTION  
+*/
+
+.selected-lang {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  line-height: 2;
+  width: 80px;
+  color: orange;
+}
+
+.selected-lang ul {
+  margin: 0;
+  padding: 0;
+}
+.selected-lang::before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 25px;
+}
+
+.lang-mnu {
+  margin-top: 3px;
+  padding: 10px;
+  position: relative;
+  /* -webkit-box-shadow: 0 0 0 10px rgba(0,0,0,1);
+  box-shadow: 0 0 0 10px rgba(0,0,0,1); */
+}
+
+.lang-mnu ul {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid #fff;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+
+.lang-mnu ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lang-mnu ul li a {
+  display: block;
+  width: 100px;
+  padding: 5px 10px;
+}
+
+.lang-mnu ul li a:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  width: 30px;
+  height: 25px;
+}
+
+.lang-mnu ul li a:hover {
+  background-color: rgba(130, 130, 130, 0.801);
+}
+
+.fr:before {
+  background-image: url('https://flagsapi.com/FR/flat/32.png');
+}
+
+.en:before {
+  background-image: url('https://flagsapi.com/US/flat/32.png');
+}
+
+.lang-mnu:hover ul {
+  display: block;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -339,7 +426,7 @@ h6 {
   width: 100%;
   height: 90vh;
   
-  background-image: url("../img/service/home1.jpeg");
+  background-image: url("../img/service/home3.jpeg");
   /* background: white #37517e; */
 }
 
@@ -365,6 +452,7 @@ h6 {
   color: rgba(250, 144, 5, 0.822);
   margin-bottom: 20px;
   font-size: 30px;
+  text-transform: capitalize;
 }
 
 #hero h4 {
